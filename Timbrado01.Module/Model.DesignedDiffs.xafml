@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Timbrado01" Logo="logoCD" Copyright="Copyright (C) 2023 {0:Company} TODOS LOS DERECHOS RESERVADOS" Company="H. Cámara de Diputados">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="ACCESOS-DE-USUARIO" Caption="ACCESOS DE USUARIO" IsNewNode="True" />
+      <Item Id="CANCELADOS-EXTERNOS" Caption="CANCELADOS EXTERNOS" IsNewNode="True" />
+      <Item Id="Default">
+        <Items>
+          <Item Id="Timbrado_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="PAGOS" Caption="PAGOS" ImageName="FunctionsFinancial_16x16" IsNewNode="True" />
+      <Item Id="TIMBRADO" Caption="TIMBRADO" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Timbrado_ListView" ViewId="Timbrado_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerModuleBase" Version="21.2.7.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="21.2.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+  </Views>
+</Application>

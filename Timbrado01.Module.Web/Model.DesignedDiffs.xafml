@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="Timbrado01.Module.BusinessObjects.Timbrado" ImageName="Office2013\Announcement_16x16" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="@65a43170-240e-4b9b-b7c8-2affd9a91564" Caption="DESGLOCE RECIBO" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="DesgloceRecibo_ListView" ViewId="DesgloceRecibo_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="@ed483383-ce6d-4344-9fb1-05a7e16af8c8" Caption="TIMBRADO" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Timbrado_ListView" ViewId="Timbrado_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="CANCELADOS-EXTERNOS">
+        <Items>
+          <Item Id="CanceladosExternos_ListView" ViewId="CanceladosExternos_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Default">
+        <Items>
+          <Item Id="CanceladosExternos_ListView" Removed="True" />
+          <Item Id="DesgloceRecibo_ListView" Removed="True" />
+          <Item Id="Pagos_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="PAGOS">
+        <Items>
+          <Item Id="Pagos_ListView" ViewId="Pagos_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Caption="INFORMES" />
+      <Item Id="TIMBRADO" Removed="True">
+        <Items>
+          <Item Id="Timbrado_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options CollectionsEditMode="Edit" />
+  <SchemaModules>
+    <SchemaModule Name="SchedulerAspNetModule" Version="21.2.7.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="21.2.7.0" IsNewNode="True" />
+    <SchemaModule Name="SystemAspNetModule" Version="21.2.7.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="21.2.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="System.Drawing.Color" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxColorPickerPropertyEditor" />
+    </PropertyEditor>
+  </ViewItems>
+</Application>
